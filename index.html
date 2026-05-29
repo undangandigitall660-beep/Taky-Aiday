@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Taky & Aida </title>
+    <!-- Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Great Vibes untuk font elegan, Inter untuk teks biasa -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcf9f2; /* Warna latar krem lembut */
+            color: #4a4a4a;
+            scroll-behavior: smooth;
+        }
+        .font-cursive {
+            font-family: 'Great Vibes', cursive;
+        }
+        
+        /* Animasi fade in ringan */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Hero Section dengan efek parallax sederhana */
+        .hero-bg {
+            /* EDIT INI: Ganti URL ini dengan foto utama Anda (ukuran besar disarankan) */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Styling untuk foto galeri agar terlihat rapi */
+        .gallery-img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white relative px-4">
+        <div class="fade-in z-10">
+            <p class="text-sm md:text-lg tracking-[0.3em] uppercase mb-4 font-light">The Wedding Of</p>
+            <!-- EDIT INI: Nama Mempelai -->
+            <h1 class="font-cursive text-6xl md:text-8xl lg:text-9xl mb-6 text-[#e8d5b5]">Taky & Aida</h1>
+            <p class="text-lg md:text-xl font-light mb-8">Rabu, 3 Juni 2026</p>
+            <a href="#invitation" class="inline-block border border-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition duration-300 text-sm tracking-widest uppercase">Buka Undangan</a>
+        </div>
+        
+        <!-- Gelombang dekoratif di bagian bawah Hero -->
+        <div class="absolute bottom-0 w-full overflow-hidden leading-[0]">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-[60px] md:h-[100px]">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,120.4,192.51,105.79,237.95,95.12,282.8,71.21,321.39,56.44Z" class="fill-[#fcf9f2]"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- KUTIPAN SECTION -->
+    <section class="py-16 md:py-24 px-4 max-w-4xl mx-auto text-center">
+        <i class="fas fa-heart text-[#c8a97e] text-2xl mb-6"></i>
+        <!-- EDIT INI: Ganti kutipan sesuai keinginan (misal: ayat suci, puisi, dll) -->
+        <p class="text-gray-600 text-lg md:text-xl font-light italic leading-relaxed">
+            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."
+        </p>
+        <p class="mt-4 text-sm text-gray-500 font-semibold">(Ar-Rum: 21)</p>
+    </section>
+
+    <!-- MEMPELAI SECTION -->
+    <section id="invitation" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-cursive text-5xl md:text-6xl text-[#c8a97e] mb-4">Mempelai</h2>
+                <p class="text-gray-500 font-light max-w-2xl mx-auto">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24">
+                <!-- Mempelai Pria -->
+                <div class="text-center w-full md:w-1/3">
+                    <div class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-4 border-[#e8d5b5] shadow-lg mb-6">
+                        <!-- EDIT INI: Foto Mempelai Pria -->
+                        <img src="bokir.jpeg" alt="Mempelai Pria" class="w-full h-full object-cover">
+                    </div>
+                    <!-- EDIT INI: Nama Mempelai Pria -->
+                    <h3 class="font-cursive text-4xl mb-2 text-gray-800">Muhammad Takiyudin</h3>
+                    <p class="text-gray-500 text-sm mb-1">Putra dari</p>
+                    <p class="font-semibold text-gray-700">Bpk. Suroso & Ibu Sopiah</p>
+                    <a href="#" class="inline-block mt-4 text-[#c8a97e] hover:text-gray-800"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+
+                <!-- Simbol '&' -->
+                <div class="text-6xl font-cursive text-[#e8d5b5]">
+                    &
+                </div>
+
+                <!-- Mempelai Wanita -->
+                <div class="text-center w-full md:w-1/3">
+                    <div class="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-4 border-[#e8d5b5] shadow-lg mb-6">
+                        <!-- EDIT INI: Foto Mempelai Wanita -->
+                        <img src="ida.jpeg" alt="Mempelai Wanita" class="w-full h-full object-cover">
+                    </div>
+                    <!-- EDIT INI: Nama Mempelai Wanita -->
+                    <h3 class="font-cursive text-4xl mb-2 text-gray-800">Mis Aida Yani</h3>
+                    <p class="text-gray-500 text-sm mb-1">Putri dari</p>
+                    <p class="font-semibold text-gray-700">Bpk. Supriyanto & Ibu Suripah</p>
+                    <a href="#" class="inline-block mt-4 text-[#c8a97e] hover:text-gray-800"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACARA SECTION -->
+    <section class="py-20 relative bg-[#fcf9f2]">
+        <div class="max-w-5xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-cursive text-5xl md:text-6xl text-[#c8a97e] mb-4">Waktu & Tempat</h2>
+                <p class="text-gray-500 font-light">Momen bahagia kami akan diselenggarakan pada:</p>
+            </div>
+
+            <!-- Kartu Acara -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Akad Nikah -->
+                <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-4 border-[#c8a97e]">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Akad Nikah & Resepsi</h3>
+                    <div class="flex justify-center items-center gap-4 mb-4 text-[#c8a97e]">
+                        <i class="far fa-calendar-alt text-xl"></i>
+                        <span class="font-medium">Senin, 1 Juni 2026</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-4 mb-6 text-[#c8a97e]">
+                        <i class="far fa-clock text-xl"></i>
+                        <span class="font-medium">08.00 WIB - Selesai</span>
+                    </div>
+                    <div class="mb-6 text-gray-600">
+                        <p class="font-semibold text-gray-800">Kediaman Mis Aida Yani</p>
+                        <p class="text-sm mt-1">Desa Sukoharjo Kec. Sekampung</p>
+                    </div>
+                    <!-- EDIT INI: Link Google Maps -->
+                    <a href="https://maps.app.goo.gl/S7nJsqxBJYawMCMu8?g_st=ac" target="_blank" class="inline-block bg-[#c8a97e] text-white px-6 py-2 rounded-full text-sm hover:bg-gray-800 transition duration-300">Peta Lokasi</a>
+                </div>
+
+                <!-- Resepsi -->
+                <div class="bg-white p-8 rounded-2xl shadow-md text-center border-t-4 border-[#c8a97e]">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Unduh Mantu</h3>
+                    <div class="flex justify-center items-center gap-4 mb-4 text-[#c8a97e]">
+                        <i class="far fa-calendar-alt text-xl"></i>
+                        <span class="font-medium">Rabu, 3 Juni 2026</span>
+                    </div>
+                    <div class="flex justify-center items-center gap-4 mb-6 text-[#c8a97e]">
+                        <i class="far fa-clock text-xl"></i>
+                        <span class="font-medium">08.00 WIB - selesai </span>
+                    </div>
+                    <div class="mb-6 text-gray-600">
+                        <p class="font-semibold text-gray-800">Kediaman Muhammad Takyuddin</p>
+                        <p class="text-sm mt-1">Desa Sidodadi Kec. Sekampung</p>
+                    </div>
+                    <!-- EDIT INI: Link Google Maps -->
+                    <a href="https://maps.app.goo.gl/S7nJsqxBJYawMCMu8?g_st=ac" target="_blank" class="inline-block bg-[#c8a97e] text-white px-6 py-2 rounded-full text-sm hover:bg-gray-800 transition duration-300">Peta Lokasi</a>
+                </div>
+            </div>
+
+            <!-- Hitung Mundur -->
+            <div class="mt-20 text-center">
+                <h3 class="text-xl text-gray-500 uppercase tracking-widest mb-8">Menuju Hari Bahagia</h3>
+                <div class="flex justify-center gap-4 md:gap-8" id="countdown">
+                    <!-- Javascript akan mengisi bagian ini -->
+                    <div class="bg-white w-16 md:w-24 py-4 rounded-lg shadow text-center">
+                        <span class="text-2xl md:text-4xl font-bold text-[#c8a97e]" id="days">00</span>
+                        <p class="text-xs text-gray-500 mt-1">Hari</p>
+                    </div>
+                    <div class="bg-white w-16 md:w-24 py-4 rounded-lg shadow text-center">
+                        <span class="text-2xl md:text-4xl font-bold text-[#c8a97e]" id="hours">00</span>
+                        <p class="text-xs text-gray-500 mt-1">Jam</p>
+                    </div>
+                    <div class="bg-white w-16 md:w-24 py-4 rounded-lg shadow text-center">
+                        <span class="text-2xl md:text-4xl font-bold text-[#c8a97e]" id="minutes">00</span>
+                        <p class="text-xs text-gray-500 mt-1">Menit</p>
+                    </div>
+                    <div class="bg-white w-16 md:w-24 py-4 rounded-lg shadow text-center">
+                        <span class="text-2xl md:text-4xl font-bold text-[#c8a97e]" id="seconds">00</span>
+                        <p class="text-xs text-gray-500 mt-1">Detik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REKENING & DANA SECTION (Menggantikan Form Ucapan) -->
+    <section class="py-20 bg-[#fcf9f2]">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-cursive text-5xl md:text-6xl text-[#c8a97e] mb-4">Kirim Hadiah</h2>
+                <p class="text-gray-500 font-light max-w-2xl mx-auto">Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Bagi keluarga dan sahabat yang ingin memberikan tanda kasih, dapat mengirimkannya melalui:</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <!-- Kartu BCA -->
+                <div class="bg-white p-8 rounded-2xl shadow-md w-full md:w-1/2 text-center border-t-4 border-[#c8a97e]">
+                    <div class="mb-4 text-[#c8a97e]">
+                        <i class="fas fa-money-check-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-2">BCA</h3>
+                    <p class="text-2xl font-semibold text-gray-800 tracking-wider mb-2">8550264308</p>
+                    <p class="text-gray-500 uppercase text-sm font-medium">a.n Muhammad Takiyudin</p>
+                </div>
+
+                <!-- Kartu DANA -->
+                <div class="bg-white p-8 rounded-2xl shadow-md w-full md:w-1/2 text-center border-t-4 border-[#c8a97e]">
+                    <div class="mb-4 text-[#c8a97e]">
+                        <i class="fas fa-wallet text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-500 mb-2">DANA</h3>
+                    <p class="text-2xl font-semibold text-gray-800 tracking-wider mb-2">+6289520092380</p>
+                    <p class="text-gray-500 uppercase text-sm font-medium">Dompet Digital</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white text-center py-10">
+        <h2 class="font-cursive text-4xl text-[#e8d5b5] mb-2">Taky & Aida</h2>
+        <p class="text-gray-400 text-sm">Terima kasih atas doa dan restunya.</p>
+        <p class="text-gray-600 text-xs mt-6">&copy; 2026 Wedding Invitation.</p>
+    </footer>
+
+    <!-- SCRIPT UNTUK COUNTDOWN -->
+    <script>
+        // EDIT INI: Setel tanggal pernikahan Anda di sini (Format: "Bulan Tanggal, Tahun Jam:Menit:Detik")
+        // Contoh: "Dec 12, 2026 08:00:00"
+        const countDownDate = new Date("June 2, 2026 08:00:00").getTime();
+
+        // Update hitung mundur setiap 1 detik
+        const x = setInterval(function() {
+
+            // Dapatkan waktu saat ini
+            const now = new Date().getTime();
+
+            // Hitung jarak antara sekarang dan tanggal pernikahan
+            const distance = countDownDate - now;
+
+            // Perhitungan waktu untuk hari, jam, menit, dan detik
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Tampilkan hasil pada elemen dengan id yang sesuai
+            document.getElementById("days").innerHTML = days < 10 ? '0' + days : days;
+            document.getElementById("hours").innerHTML = hours < 10 ? '0' + hours : hours;
+            document.getElementById("minutes").innerHTML = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById("seconds").innerHTML = seconds < 10 ? '0' + seconds : seconds;
+
+            // Jika hitungan mundur selesai, tampilkan teks
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "<div class='text-2xl font-bold text-[#c8a97e] p-4 bg-white rounded shadow w-full'>Acara Sedang Berlangsung / Telah Selesai</div>";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
